@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Wikipedia Viewer</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	
+	<div class="container">
+		<div class="col-md-12 ">
+			<h1 class="app-heading">Wikipedia Viewer</h1>
+			<form id="form-search">
+				<p>Search for Wikipedia Entries</p>
+				<input type="text" name="search" id="input-search" placeholder="Enter search term here" tabindex="1">
+				<p>Or click <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">here</a> to view a random Wikipedia article </p>
+			</form>
+			<ul id="wiki-entries"></ul>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
